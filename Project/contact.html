@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!--
+Assignment Name: Project 
+File Name:contact.html
+Date: 06/10/17 
+Programmer: Eric Jerde 
+-->
+
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" 
+content="width=device-width, intial-scale=1.0">
+<link rel="stylesheet" href="projectcss.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<title>Portland Historical Tours</title>
+<body>
+<div id="wrapper">
+<header>
+<h1>
+<a href="portland_historical_tours_home.html" id="Logo">Logo</a>
+</h1>
+</header>
+<nav>
+<ul>
+<li><a href="portland_historical_tours_home.html">Portland Tours</a></li>
+<li><a href="downtown_tour.html">Downtown Tour</a></li>
+<li><a href="growth_tour.html">Growth Tour</a></li>
+<li><a href="landmarks_tour.html">Landmarks Tour</a></li>
+<li><a href="forms.html">Registration</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="general_information.html">General Information</a></li>
+</ul>
+</nav>
+<div class="desktop"></div>
+<div class="mobile"></div>
+<main>
+<h2><strong>Contact Form</strong></h2><br>
+<p>Required information is marked with an asterisk (*).</p>
+<form name= "contact" method= "post" id= "contact" action= "http://webdevbasics.net/scripts/demo.php">
+<label for="name">*Name:</label> 
+<input type="text" name="name" id="name" required="required"> 
+<label for="email">*Email:</label>
+<input type="email" name="myEmail" id="email" required="required">
+<label for="subject">*Subject:</label>
+<input type="text" name="subject" id="subject" required="required">
+<label for="message">*Message:</label>
+<textarea name="message" id="message" required= "required" rows="2"
+cols="20"></textarea>
+<input id="mySubmit" type="submit" value="submit"> 
+</form>
+<div> 
+</div>
+</main>
+<footer>
+<br>
+1200 NW Naito Parkway
+Portland, OR 97209<br>
+<br>
+Copyright &copy; 2017 Portland Historical Tours
+<br>
+<a href="portlandhistoricaltours.com">portlandhistoricaltours.com</a>
+</footer>
+</div>
+</body>
+</html>

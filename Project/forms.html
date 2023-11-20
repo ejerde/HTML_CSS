@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--
+Assignment Name: Project 
+File Name:forms.html
+Date: 06/10/17 
+Programmer: Eric Jerde 
+-->
+
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" 
+content="width=device-width, intial-scale=1.0">
+<link rel="stylesheet" href="projectcss.css">
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
+<title>Portland Historical Tours</title>
+<body>
+<div id="wrapper">
+<header> 
+<h1>
+<a href="portland_historical_tours_home.html" id="Logo">Logo</a>
+</h1>
+</header>
+<nav>
+<ul>
+<li><a href="portland_historical_tours_home.html">Portland Tours</a></li>
+<li><a href="downtown_tour.html">Downtown Tour</a></li>
+<li><a href="growth_tour.html">Growth Tour</a></li>
+<li><a href="landmarks_tour.html">Landmarks Tour</a></li>
+<li><a href="forms.html">Registration</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="general_information.html">General Information</a></li>
+</ul>
+</nav>
+<div class="desktop"></div>
+<div class="mobile"></div>
+<main>
+<h2><strong>Forms</strong></h2><br>
+<h3><strong>Book a Reservation</strong></h3>
+<p>Required information is marked with an asterisk (*).</p>
+<form name= "reservation" method= "post" id= "reservation" action= "http://webdevbasics.net/scripts/demo.php">
+<label for="tour">*Tour Name:</label> 
+<input type="text" name="tour" id="tour" list="tours" required="required">
+<datalist id="tours">
+    <option value="Downtown"  label="Downtown">
+    <option value="Growth"    label="Growth">
+    <option value="Landmarks" label="Landmarks">
+</datalist>
+<label for="fname">*First Name:</label> 
+<input type="text" name="fname" id="fname" required="required">
+<label for="lname">*Last Name:</label> 
+<input type="text" name="lname" id="lname" required="required">
+<label for="email">*E-mail:</label> 
+<input type="email" name="myEmail" id="email" required="required">
+<label for="phone">*Phone:</label> 
+<input type="tel" name="myPhone" id="phone" required= "required">
+<label for="myDate">*Tour Date</label>
+<input type="date" name="myDate" id="myDate">
+<label for="participants">*Participants:</label>
+<input type="number" name="participants" id="participants" min="1" max="10">
+<label for="comments">*Comments:</label> 
+<p>Does anyone in your tour group have food sensitivities? If so, what are they?</p>
+<textarea name="comments" id="comments" required= "required" rows="2"
+cols="20"></textarea>
+<input id="mySubmit" type="submit" value="submit"> 
+</form>
+<div> 
+</div>
+</main>
+<footer>
+<br>
+1200 NW Naito Parkway
+Portland, OR 97209<br>
+<br>
+Copyright &copy; 2017 Portland Historical Tours
+<br>
+<a href="portlandhistoricaltours.com">portlandhistoricaltours.com</a>
+</footer>
+</div>
+</body>
+</html>
